@@ -11,24 +11,25 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 
+import { OverlayModule } from '@angular/cdk/overlay'
+import { CdkMenuModule } from '@angular/cdk/menu'
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import 'hammerjs';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { WorksComponent } from './pages/works/works.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
     AboutComponent,
     ExperienceComponent,
-    WorksComponent
+    WorksComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,9 @@ import { WorksComponent } from './pages/works/works.component';
     MatMenuModule,
     FlexLayoutModule,
     FontAwesomeModule,
-    MatIconModule
+    MatIconModule,
+    OverlayModule,
+    CdkMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

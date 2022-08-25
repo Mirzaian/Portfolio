@@ -1,46 +1,15 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import '~@angular/cdk/overlay-prebuilt.css';
 
-$lt-gray: #ddd;
-$background-dark: #ffffff;
-$background-light: #9575CD;
-$background-pale: #D1C4E9;
-$primary-color-dark: #512DA8;
-$primary-color: #673AB7;
-$primary-color-light: #D1C4E9;
-$primary-color-text: #FFFFFF;
-$accent-color: #FFC107;
-$primary-text-color: white;
-$secondary-text-color: #757575;
-$divider-color: #BDBDBD;
-
-@mixin zero-margin($pad-up-down, $pad-left-right) {
-    margin: 0px auto;
-    padding: $pad-up-down $pad-left-right;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Roboto, sans-serif;
-
-}
-
-mat-toolbar {
-    background-color: rgb(44, 44, 44) !important;
-}
-
-.background-primary {
-    background-color: $background-dark !important;
-}
-
-.background-accent {
-    background-color: $accent-color !important;
-}
-
-.text-floral-white {
-    color: floralwhite !important;
-}
-
-.flex-spacer {
-    flex: 1 1 auto;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background: #f4f7fa;
 }
