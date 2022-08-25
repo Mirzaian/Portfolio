@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "Mirzaian"
+  "cli": {
+    "analytics": "f9587b9b-28ed-480b-b7c4-204a990a704a"
+  }
 }
