@@ -1,0 +1,14 @@
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.footer {
+    @include zero-margin(20px, 0px);
+    background-color: rgb(44, 44, 44);
+    font-size: 14px;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
