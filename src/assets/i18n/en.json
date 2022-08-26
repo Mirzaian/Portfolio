@@ -1,0 +1,18 @@
+{
+    "home": {
+        "title": "Home",
+        "text": "lol"
+    },
+    "about": {
+        "title": "About me",
+        "text": "lol"
+    },
+    "experience": {
+        "title": "Experience",
+        "text": "lol"
+    },
+    "works": {
+        "title": "Works",
+        "text": "lol"
+    }
+}

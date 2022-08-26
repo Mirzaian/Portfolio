@@ -1,0 +1,18 @@
+{
+    "home": {
+        "title": "Startseite",
+        "text": "lol"
+    },
+    "about": {
+        "title": "Über mich",
+        "text": "lol"
+    },
+    "experience": {
+        "title": "Erfahrungen",
+        "text": "lol"
+    },
+    "works": {
+        "title": "Portfolio",
+        "text": "lol"
+    }
+}

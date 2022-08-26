@@ -2,6 +2,7 @@ import { Component, Output, EventEmitter, HostListener, OnInit } from '@angular/
 import { navigationItems } from '../Services/navItems';
 import { SideNavToggle } from '../Interfaces/sideNavToggle';
 import { animate, keyframes, style, transition, trigger } from '@angular/animations';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-sidenav',
@@ -50,9 +51,18 @@ export class SidenavComponent implements OnInit {
     }
   }
 
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('en');
+    translate.use('en')
+  }
+
   ngOnInit(): void {
       this.screenWidth = window.innerWidth;
   }
+
+  useLanguage(language: string): void {
+    this.translate.use(language);
+}
 
   toggleCollapse(): void {
     this.collapsed = !this.collapsed;

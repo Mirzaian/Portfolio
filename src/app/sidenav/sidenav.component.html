@@ -15,5 +15,14 @@
                 <span class="sidenav-link-text" *ngIf="collapsed">{{ item.label }}</span>
             </a>
         </li>
+        <div class="btn-language">
+            <button mat-icon-button [matMenuTriggerFor]="languageMenu">
+                <mat-icon fontSet="fa" fontIcon="fa-language"></mat-icon>
+            </button>
+            <mat-menu #languageMenu>
+                <button mat-menu-item (click)="useLanguage('en')">Englisch</button>
+                <button mat-menu-item (click)="useLanguage('de')">Deutsch</button>
+            </mat-menu>
+        </div>
     </ul>
 </div>

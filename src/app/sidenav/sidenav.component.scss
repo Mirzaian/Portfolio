@@ -109,3 +109,16 @@
         color: var(--black-color);
     }
 }
+
+.btn-language {
+    background-color: var(--white-color);
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 0.625rem;
+}
+
+.mat-icon {
+    font-size: 18px;
+}
