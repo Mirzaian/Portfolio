@@ -22,6 +22,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { WorksComponent } from './pages/works/works.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { BodyComponent } from './body/body.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     AboutComponent,
     ExperienceComponent,
     WorksComponent,
-    SidenavComponent
+    SidenavComponent,
+    BodyComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

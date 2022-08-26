@@ -1,12 +1,11 @@
 .sidenav {
-    background: #263238;
+    background: var(--main-color);
     transition: all .5s ease;
     position: fixed;
     z-index: 1;
     top: 0;
     width: 5rem;
     height: 100vh;
-    box-shadow: 0.063rem 0 1.25rem 0 #8690a3;
 
     .logo-container {
         display: flex;
@@ -15,8 +14,10 @@
         width: 100%;
 
         .logo {
-            background: white;
+            background: var(--main-color);
+            color: var(--red-color);
             text-align: center;
+            transform: rotate(-90deg);
             width: 3rem;
             min-width: 3rem;
             border-radius: 0.313rem;
@@ -28,10 +29,10 @@
         }
 
         .logo-text {
-            margin-left: 1.5rem;
+            margin-right: 5.5rem;
             font-size: 24px;
             font-weight: 700;
-            color: white;
+            color: var(--white-color);
         }
 
         .btn-close {
@@ -44,7 +45,7 @@
             border: none;
 
             .fa-times {
-                color: #fff;
+                color: var(--white-color);
                 font-size: 24px;
             }
         }
@@ -73,10 +74,10 @@
             display: flex;
             align-items: center;
             height: 3rem;
-            color: #f3f3f3;
+            color: var(--white-color);
             text-decoration: none;
             border-radius: 0.625rem;
-            transition: color .3s ease;
+            transition: all .3s ease;
 
             .sidenav-link-icon {
                 font-size: 22px;
@@ -88,15 +89,23 @@
 
             .sidenav-link-text {
                 margin-left: 1.5rem;
-
             }
         }
     }
 
     .sidenav-nav-item:hover {
         .sidenav-nav-link {
-            background-color: #fff;
-            color: #000;
+            background-color: var(--white-color);
+            color: var(--black-color);
         }
+    }
+}
+
+.active {
+    background-color: var(--white-color);
+
+    .sidenav-link-icon,
+    .sidenav-link-text {
+        color: var(--black-color);
     }
 }

@@ -103,6 +103,11 @@
               "src/styles.scss",
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/_vars.scss"
+              ]
+            },
             "scripts": []
           }
         }
