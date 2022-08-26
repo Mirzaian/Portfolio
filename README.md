@@ -1,31 +1,68 @@
-<<<<<<< HEAD
-# Mirzaian
+<p align="left">
+  <a href="https://github.com/mirzaian"><img src="https://readme-typing-svg.herokuapp.com?color=E20074&lines=My+Portfolio+Page;Apprentice+Project;Always+learning+new+things"></a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.8.
+## Getting started
+
+Here is a short introduction how to install and develop the application on a windows operating system by yourself.
+
+
+### Prerequisites
+
+First of all we need Node.js and npm.
+Install desired Nodejs version. (nodejs v18.7.0 / npm v8.18.0)
+* Step 1
+  ```sh
+  https://nodejs.org/
+  ```
+  
+  Now, we need a good IDE to work with.
+  * Step 2
+  ```sh
+  https://visualstudio.microsoft.com/
+  ```
+
+
+### Installation
+
+Now we go step for step, how to install the project.
+
+1. Now start the Terminal and we install the used framework Angular to get the project work.(based on version 14.2)
+   ```sh
+   npm install @angular/cli@14
+   ```
+2. In the next step, we clone the repo
+   ```sh
+   git clone
+   ```
+3. Now you have the project on your computer. In Visual Studio you have on the top the option `File`, click that. Now choose `Open folder` and select the folder of the cloned repo 
+
+4. After you open the cloned repo in visual studio, you have to install the project on your computer
+   ```sh
+   npm install
+   ```
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+This Project is about having your own portfolio page where you can show your personality, skills and your own projects.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Support
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
+If you have any questions, please contact me.<br>
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# Portfolio
->>>>>>> b079db687bdeeffa396c3c8e60ab415c0476d214
+
+
+## Authors and acknowledgment
+
+[Kevin Mirzaian](https://github.com/Mirzaian/Profile)
+
+
+## License
+
+GPL-3.0 license © 2022 [Kevin Mirzaian](https://github.com/Mirzaian/Profile) 
