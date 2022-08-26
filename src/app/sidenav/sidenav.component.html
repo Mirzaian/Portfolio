@@ -8,8 +8,7 @@
     </div>
     <ul class="sidenav-nav">
         <li class="sidenav-nav-item" *ngFor="let item of navItems">
-            <a class="sidenav-nav-link" [routerLink]="[item.routeLink]"
-                routerLinkActive="active"
+            <a class="sidenav-nav-link" [routerLink]="[item.routeLink]" routerLinkActive="active"
                 [routerLinkActiveOptions]="{ exact: true }">
                 <i class="sidenav-link-icon" [class]="item.icon"></i>
                 <span class="sidenav-link-text" *ngIf="collapsed">{{ item.label }}</span>
@@ -23,6 +22,10 @@
                 <button mat-menu-item (click)="useLanguage('en')">Englisch</button>
                 <button mat-menu-item (click)="useLanguage('de')">Deutsch</button>
             </mat-menu>
+        </div>
+        <div class="copyright-container">
+            <div class="copyright-text">© 2022 Mirzaian
+            </div>
         </div>
     </ul>
 </div>

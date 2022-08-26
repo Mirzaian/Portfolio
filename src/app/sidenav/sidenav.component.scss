@@ -115,10 +115,21 @@
     bottom: 0;
     position: fixed;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     border-radius: 0.625rem;
 }
 
 .mat-icon {
     font-size: 18px;
+}
+
+.copyright-container {
+    bottom: 0;
+    position: fixed;
+
+    .copyright-text {
+        text-align: center;
+        font-size: 12px;
+        color: var(--white-color)
+    }
 }
