@@ -1,0 +1,72 @@
+.home-card {
+    box-shadow: 1px 6px 5px -3px rgb(0 0 0 / 20%);
+
+    mat-card {
+        background-color: var(--main-color);
+    }
+    mat-card-title {
+        color: var(--white-color);
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    mat-card-subtitle {
+        text-align: center;
+    }
+
+    .avatar {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        overflow: hidden;
+        box-shadow: 1px 6px 14px -3px rgb(0 0 0 / 25%);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .icon-row {
+        display: flex;
+
+        .mat-icon-button {
+            transition: .3s ease all;
+            color: var(--white-color);
+        }
+
+        .btn-linkedin {
+            color:#fff;
+        
+            &:hover {
+                background-color:#007bb6;
+            }
+        }
+        
+        .btn-facebook {
+            color:#fff;
+        
+            &:hover {
+                background-color:#3b5998;
+            }
+        }
+        
+        .btn-instagram {
+            color:#fff;
+        
+            &:hover {
+                background-color:#e055;
+            }
+        }
+        
+        .btn-github {
+            color:#fff;
+        
+            &:hover {
+                background-color:#f09b;
+            }
+        }
+    }
+}

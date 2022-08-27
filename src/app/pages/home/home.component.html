@@ -1,7 +1,27 @@
 <h1>{{ 'home.title' | translate }}</h1>
-<div class="card">
-    <div class="card-head">Lorem ipsum - home</div>
-    <div class="card-body">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ducimus soluta, quasi aut ipsa non, ullam enim rem repudiandae, vitae provident animi. Inventore rerum, voluptas optio dignissimos blanditiis modi illo!
-    </div>
+<div class="home-card">
+    <mat-card class="mat-elevation-z0">
+        <div class="avatar">
+            <img src="assets/images/avatar.jpg" alt="avatar">
+        </div>
+        <mat-card-title>Kevin Mirzaian</mat-card-title>
+        <mat-card-subtitle>
+            <a href="https://github.com/mirzaian"><img
+                    src="https://readme-typing-svg.herokuapp.com?color=A70000FF&lines=IT+Specialist+for+Application+Development;Web+Developer;Graphic%20Designer;Always%20learning%20new%20things&center=true&width=500&height=50"></a>
+        </mat-card-subtitle>
+        <div class="icon-row">
+            <button mat-icon-button class="btn-linkedin">
+                <mat-icon fontSet="fa" fontIcon="fa-linkedin"></mat-icon>
+            </button>
+            <button mat-icon-button class="btn-facebook">
+                <mat-icon fontSet="fa" fontIcon="fa-facebook"></mat-icon>
+            </button>
+            <button mat-icon-button class="btn-instagram">
+                <mat-icon fontSet="fa" fontIcon="fa-instagram"></mat-icon>
+            </button>
+            <button mat-icon-button class="btn-github">
+                <mat-icon fontSet="fa" fontIcon="fa-github"></mat-icon>
+            </button>
+        </div>
+    </mat-card>
 </div>

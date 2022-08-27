@@ -6,7 +6,7 @@ export const navigationItems = [
     },
     {
         routeLink: 'about',
-        icon: 'fa fa-user-check',
+        icon: 'fa fa-user',
         label: 'About'
     },
     {
