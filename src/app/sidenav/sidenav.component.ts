@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter, HostListener, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter, HostListener, OnInit, ChangeDetectorRef, NgZone } from '@angular/core';
 import { navigationItems } from '../Services/navItems';
 import { SideNavToggle } from '../Interfaces/sideNavToggle';
 import { animate, keyframes, style, transition, trigger } from '@angular/animations';
@@ -51,25 +51,25 @@ export class SidenavComponent implements OnInit {
     }
   }
 
-  constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
-    translate.use('en')
-  }
+  constructor(private translate: TranslateService, private cdf: ChangeDetectorRef, private ngZone: NgZone) {}
 
   ngOnInit(): void {
       this.screenWidth = window.innerWidth;
+      this.translate.setDefaultLang('en');
+      this.translate.use('en')
   }
 
-  useLanguage(language: string): void {
-    this.translate.use(language);
+  useLanguage(language: string) {
+    this.ngZone.run(() => {
+      this.translate.use(language)});
 }
 
-  toggleCollapse(): void {
+  toggleCollapse() {
     this.collapsed = !this.collapsed;
     this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
   }
 
-  closeSidenav(): void {
+  closeSidenav() {
     this.collapsed = false;
     this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
   }

@@ -14,5 +14,9 @@
     "works": {
         "title": "Works",
         "text": "lol"
+    },
+    "language": {
+        "german": "German",
+        "english": "English"
     }
 }

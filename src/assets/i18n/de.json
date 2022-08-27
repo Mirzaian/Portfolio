@@ -14,5 +14,9 @@
     "works": {
         "title": "Portfolio",
         "text": "lol"
+    },
+    "language": {
+        "german": "Deutsch",
+        "english": "Englisch"
     }
 }

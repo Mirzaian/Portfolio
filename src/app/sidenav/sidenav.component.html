@@ -19,8 +19,8 @@
                 <mat-icon fontSet="fa" fontIcon="fa-language"></mat-icon>
             </button>
             <mat-menu #languageMenu>
-                <button mat-menu-item (click)="useLanguage('en')">Englisch</button>
-                <button mat-menu-item (click)="useLanguage('de')">Deutsch</button>
+                <button mat-menu-item (click)="useLanguage('en')">{{ 'language.english' | translate }}</button>
+                <button mat-menu-item (click)="useLanguage('de')">{{ 'language.german' | translate }}</button>
             </mat-menu>
         </div>
         <div class="copyright-container">
