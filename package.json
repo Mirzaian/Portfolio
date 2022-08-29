@@ -28,9 +28,11 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
+    "animate.css": "^4.1.1",
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
     "rxjs": "~7.5.0",
+    "t-writer.js": "^1.0.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

@@ -1,5 +1,8 @@
 .home-card {
-    box-shadow: 1px 6px 5px -3px rgb(0 0 0 / 20%);
+    min-width: 325px;
+    max-width: 650px;
+    margin: auto;
+    box-shadow: 1px 6px 5px -3px (var((--black-color)) / 100%);
 
     mat-card {
         background-color: var(--main-color);
@@ -22,7 +25,7 @@
         width: 75px;
         height: 75px;
         overflow: hidden;
-        box-shadow: 1px 6px 14px -3px rgb(0 0 0 / 25%);
+        box-shadow: 1px 5px 40px 1px (var((--black-color)) / 100%);
 
         img {
             width: 100%;
@@ -39,34 +42,59 @@
 
         .btn-linkedin {
             color:#fff;
+            animation: bounceIn;
+            animation-duration: 1s;
         
             &:hover {
                 background-color:#007bb6;
+                box-shadow: 1px 6px 14px -3px (var(--black-color) / 25%);
             }
         }
         
         .btn-facebook {
             color:#fff;
+            animation: bounceIn;
+            animation-duration: 1s;
         
             &:hover {
                 background-color:#3b5998;
+                box-shadow: 1px 6px 14px -3px (var(--black-color) / 25%);
             }
         }
         
         .btn-instagram {
             color:#fff;
+            animation: bounceIn;
+            animation-duration: 1s;
         
             &:hover {
                 background-color:#e055;
+                box-shadow: 1px 6px 14px -3px (var(--black-color) / 25%);
             }
         }
         
         .btn-github {
             color:#fff;
+            animation: bounceIn;
+            animation-duration: 1s;
         
             &:hover {
                 background-color:#f09b;
+                box-shadow: 1px 6px 14px -3px (var(--black-color) / 25%);
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .home-card {
+        mat-card {}
+        mat-card-title {}
+        mat-card-subtitle {}
+        .avatar {
+            width: 50px;
+            height: 50px;
         }
     }
 }
