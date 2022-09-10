@@ -1,0 +1,31 @@
+.space {
+    margin-top: 50px;
+}
+.content {
+    margin: auto;
+    max-width: 1225px;
+    box-shadow: 1px 6px 5px -3px (var((--black-color)) / 100%);
+
+    mat-card {
+        background-color: var(--main-color);
+
+        mat-card-header {
+            
+            mat-icon {
+                color: var(--white-color);
+                transform: scale(2);
+                margin: 10px;
+            }
+
+            mat-card-title {
+                color: var(--white-color);
+                font-size: large;
+            }
+
+            mat-card-subtitle {
+                color: var(--white-color);
+                font-size: small;
+            }
+        }
+    }
+}

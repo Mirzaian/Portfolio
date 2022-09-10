@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorksComponent implements OnInit {
 
+  programming: any[] = [
+    { 
+      "title": "Miniplan - Server Overview"
+    }
+  ]
+
+  mockups: any[] = [
+    { 
+      "title": "test"
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

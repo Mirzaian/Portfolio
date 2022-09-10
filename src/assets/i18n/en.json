@@ -1,7 +1,10 @@
 {
     "home": {
         "title": "Home",
-        "text": "lol"
+        "text": "lol",
+        "country": "Germany",
+        "slide1": "dd",
+        "quote": "Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young"
     },
     "about": {
         "title": "About me",
@@ -9,11 +12,13 @@
     },
     "experience": {
         "title": "Experience",
-        "text": "lol"
+        "education": "Education",
+        "work": "Work Experience"
     },
     "works": {
-        "title": "Works",
-        "text": "lol"
+        "title": "Recent works",
+        "application": "Applications",
+        "design": "Graphic designs"
     },
     "language": {
         "german": "German",

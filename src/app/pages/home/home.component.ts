@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    const target = document.querySelector('mat-card-subtitle');
+    const target = document.querySelector('.slogan');
 
     const writer = new Typewriter(target, {
       loop: true,

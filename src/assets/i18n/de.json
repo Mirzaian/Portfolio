@@ -1,7 +1,10 @@
 {
     "home": {
         "title": "Startseite",
-        "text": "lol"
+        "text": "lol",
+        "country": "Deutschland",
+        "slide1": "dd",
+        "quote": "Wer aufhört zu lernen, ist alt, egal ob mit zwanzig oder achtzig. Wer ständig lernt, bleibt jung. Das Größte im Leben ist es, seinen Geist jung zu halten"
     },
     "about": {
         "title": "Über mich",
@@ -9,11 +12,13 @@
     },
     "experience": {
         "title": "Erfahrungen",
-        "text": "lol"
+        "education": "Schulische Laufbahn",
+        "work": "Beruflicher Werdegang"
     },
     "works": {
         "title": "Portfolio",
-        "text": "lol"
+        "application": "Anwendungen",
+        "design": "Grafische Gestaltung"
     },
     "language": {
         "german": "Deutsch",

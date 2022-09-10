@@ -1,1 +1,39 @@
 <h1>{{ 'experience.title' | translate }}</h1>
+<div class="content">
+    <h2>{{ 'experience.education' | translate }}</h2>
+    <div fxLayout="row wrap" fxLayoutGap="16px grid" class="animate__animated animate__backInDown">
+        <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" *ngFor="let card of education">
+            <mat-card class="mat-elevation-z0">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <mat-icon fontSet="fa" fontIcon="{{ card.icon }}"></mat-icon>
+                    </div>
+                    <mat-card-subtitle>{{ card.timeline }}</mat-card-subtitle>
+                    <mat-card-title>{{ card.title }}</mat-card-title>
+                    <mat-card-subtitle>{{ card.company }}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <div class="space">
+        <h2>{{ 'experience.work' | translate }}</h2>
+        <div fxLayout="row wrap" fxLayoutGap="16px grid" class="animate__animated animate__backInUp">
+            <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" *ngFor="let card of work">
+                <mat-card class="mat-elevation-z0">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <mat-icon fontSet="fa" fontIcon="{{ card.icon }}"></mat-icon>
+                        </div>
+                        <mat-card-subtitle>{{ card.timeline }}</mat-card-subtitle>
+                        <mat-card-title>{{ card.title }}</mat-card-title>
+                        <mat-card-subtitle>{{ card.company }}</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
