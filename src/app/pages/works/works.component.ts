@@ -7,11 +7,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorksComponent implements OnInit {
 
-  programming: any[] = [
+  applications: any[] = [
     { 
-      "title": "Miniplan - Server Overview"
+      "title": "Alles",
+      "category": "everything",
+    },
+    { 
+      "title": "Miniplan - Server Overview",
+      "category": "angular"
+    },
+    { 
+      "title": "Example Portfolio",
+      "category": "angular"
+    },
+    { 
+      "title": "React",
+      "category": "react"
+    },
+    { 
+      "title": "Kotlin",
+      "category": "kotlin"
+    },
+    { 
+      "title": "Python",
+      "category": "python"
     }
   ]
+
+  filteredApplications = this.applications;
+
+  filteredCategory(category: string) {
+    if(category === 'everything') {
+      this.filteredApplications = this.applications
+    } else if(category === 'angular') {
+      this.filteredApplications = this.applications.filter((card) => card.category === 'angular')
+    } else if(category === 'react') {
+      this.filteredApplications = this.applications.filter((card) => card.category === 'react')
+    } else if(category === 'kotlin') {
+      this.filteredApplications = this.applications.filter((card) => card.category === 'kotlin')
+    } else if(category === 'python') {
+      this.filteredApplications = this.applications.filter((card) => card.category === 'python')
+    }
+  }
 
   mockups: any[] = [
     { 

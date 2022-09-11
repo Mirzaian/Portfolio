@@ -1,10 +1,20 @@
 <h1>{{ 'works.title' | translate }}</h1>
 <div class="content">
     <h2>{{ 'works.application' | translate }}</h2>
+    <div class="btnContent">
+        <button mat-button (click)="filteredCategory('everything')">Everything</button>
+        <button mat-button (click)="filteredCategory('angular')">Angular</button>
+        <button mat-button (click)="filteredCategory('react')">React</button>
+        <button mat-button (click)="filteredCategory('kotlin')">Kotlin</button>
+        <button mat-button (click)="filteredCategory('python')">Python</button>
+    </div>
     <div fxLayout="row wrap" fxLayoutGap="16px grid" class="animate__animated animate__backInDown">
-        <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" *ngFor="let card of programming">
+        <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" *ngFor="let card of filteredApplications">
             <mat-card class="mat-elevation-z0">
                 <mat-card-header>
+                    <div mat-card-avatar>
+                        <i class="fa fa-facebook"></i>
+                    </div>
                     <mat-card-title>{{ card.title }}</mat-card-title>
                 </mat-card-header>
                 <mat-card-content>
@@ -14,6 +24,13 @@
     </div>
     <div class="space">
         <h2>{{ 'works.design' | translate }}</h2>
+        <div class="btnContent">
+            <button mat-button value="all">Everything</button>
+            <button mat-button value="logos">Logos</button>
+            <button mat-button>Mockups</button>
+            <button mat-button>Icons</button>
+            <button mat-button>Wallpaper</button>
+        </div>
         <div fxLayout="row wrap" fxLayoutGap="16px grid" class="animate__animated animate__backInUp">
             <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" *ngFor="let card of mockups">
                 <mat-card class="mat-elevation-z0">
