@@ -1,4 +1,4 @@
-.space {
+.section {
     margin-top: 50px;
 }
 .content {
@@ -20,6 +20,7 @@
 
     mat-card {
         background-color: var(--main-color);
+        cursor: pointer;
 
         mat-card-content {
 
@@ -43,5 +44,10 @@
                 background-color: var(--body-color);
             }
         }
+    }
+    .img {
+        transition: opacity 3s;
+        -webkit-transition: opacity 0.8s;
+        opacity: 1;
     }
 }

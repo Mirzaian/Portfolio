@@ -1,16 +1,21 @@
-.space {
+.section {
     margin-top: 50px;
 }
+
 .content {
     margin: auto;
     max-width: 1225px;
     box-shadow: 1px 6px 5px -3px (var((--black-color)) / 100%);
 
+    section {
+        max-width: 1225px;
+    }
+
     mat-card {
         background-color: var(--main-color);
 
         mat-card-header {
-            
+
             mat-icon {
                 color: var(--white-color);
                 transform: scale(2);
@@ -25,6 +30,85 @@
             mat-card-subtitle {
                 color: var(--white-color);
                 font-size: small;
+            }
+        }
+    }
+
+    .skills-icon {
+        display: flex;
+        width: 50px;
+        height: 50px;
+
+        img {
+            margin-right: 25px;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+
+    .lang-icon {
+        display: flex;
+
+        img {
+            width: 50px;
+            height: 35px;
+            margin-right: 25px;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .content {
+
+        .skills-icon {
+            display: inline;
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .lang-icon {
+            display: inline;
+    
+            img {
+                width: 50px;
+                height: 35px;
+                margin-right: 25px;
+            }
+        }
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .content {
+        .skills-icon {
+            display: inline;
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .lang-icon {
+            display: inline;
+    
+            img {
+                width: 50px;
+                height: 35px;
+                margin-right: 25px;
             }
         }
     }
