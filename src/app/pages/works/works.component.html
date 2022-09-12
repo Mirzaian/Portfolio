@@ -11,14 +11,14 @@
     <div fxLayout="row wrap" fxLayoutGap="16px grid" class="animate__animated animate__backInDown">
         <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" *ngFor="let card of filteredApplications">
             <mat-card class="mat-elevation-z0">
-                <mat-card-header>
-                    <div mat-card-avatar>
-                        <i class="fa fa-facebook"></i>
-                    </div>
-                    <mat-card-title>{{ card.title }}</mat-card-title>
-                </mat-card-header>
                 <mat-card-content>
+                    <mat-card-title>{{ card.title }}</mat-card-title>
                 </mat-card-content>
+                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+                <div class="cardBtn">
+                    <button mat-button>Preview</button>
+                    <button mat-button>Details</button>
+                </div>
             </mat-card>
         </div>
     </div>

@@ -21,22 +21,26 @@
     mat-card {
         background-color: var(--main-color);
 
-        mat-card-header {
-            
-            mat-icon {
-                color: var(--white-color);
-                transform: scale(2);
-                margin: 10px;
-            }
+        mat-card-content {
 
             mat-card-title {
                 color: var(--white-color);
                 font-size: large;
+                text-align: center;
             }
 
             mat-card-subtitle {
                 color: var(--white-color);
                 font-size: small;
+            }
+        }
+        .cardBtn {
+            color: var(--white-color);
+            text-align: center;
+
+            button {
+                margin-right: 25px;
+                background-color: var(--body-color);
             }
         }
     }
