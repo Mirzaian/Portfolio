@@ -9,27 +9,27 @@ export class WorksComponent implements OnInit {
 
   applications: any[] = [
     { 
-      "title": "Alles",
+      "title": "Highend Project",
       "category": "everything",
     },
     { 
-      "title": "Miniplan - Server Overview",
+      "title": "Example Project nr.1",
       "category": "angular"
     },
     { 
-      "title": "Example Portfolio",
+      "title": "Example Project nr.2",
       "category": "angular"
     },
     { 
-      "title": "React",
+      "title": "Example Project nr.3",
       "category": "react"
     },
     { 
-      "title": "Kotlin",
+      "title": "Example Project nr.4",
       "category": "kotlin"
     },
     { 
-      "title": "Python",
+      "title": "Example Project nr.5",
       "category": "python"
     }
   ]

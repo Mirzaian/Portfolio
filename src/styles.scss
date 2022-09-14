@@ -24,6 +24,22 @@ h2 {
     color: var(--white-color);
 }
 
+.df {
+    display: flex;
+}
+
+.di {
+    display: inline;
+}
+
+.pull-right {
+    float: right;
+}
+
+.tv-right {
+    text-align: right;
+}
+
 .mt-1 {
     margin-top: 10px;
 }

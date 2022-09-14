@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button'
@@ -51,6 +52,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatButtonModule,
     MatMenuModule,
     MatCardModule,
+    MatProgressBarModule,
     FlexLayoutModule,
     FontAwesomeModule,
     MatIconModule,

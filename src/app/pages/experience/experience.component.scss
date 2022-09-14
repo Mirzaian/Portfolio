@@ -34,17 +34,20 @@
         }
     }
 
-    .skills-icon {
-        display: flex;
-        width: 50px;
-        height: 50px;
+    .angular {
 
         img {
-            margin-right: 25px;
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
 
             &:hover {
                 opacity: .5;
             }
+        }
+
+        mat-progress-bar {
+            width: 100%;
         }
     }
 
@@ -79,7 +82,7 @@
 
         .lang-icon {
             display: inline;
-    
+
             img {
                 width: 50px;
                 height: 35px;
@@ -104,7 +107,7 @@
 
         .lang-icon {
             display: inline;
-    
+
             img {
                 width: 50px;
                 height: 35px;

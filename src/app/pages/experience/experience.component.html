@@ -1,7 +1,7 @@
 <h1>{{ 'experience.title' | translate }}</h1>
 <div class="content">
     <h2>{{ 'experience.education' | translate }}</h2>
-    <div fxLayout="row wrap" fxLayoutGap="16px grid" class="animate__animated animate__backInDown">
+    <div fxLayout="row wrap" fxLayoutGap="25px grid" class="animate__animated animate__backInDown">
         <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" *ngFor="let card of education">
             <mat-card class="mat-elevation-z0">
                 <mat-card-header>
@@ -20,7 +20,7 @@
 
     <section class="section">
         <h2>{{ 'experience.work' | translate }}</h2>
-        <div fxLayout="row wrap" fxLayoutGap="16px grid" class="animate__animated animate__backInUp">
+        <div fxLayout="row wrap" fxLayoutGap="25px grid" class="animate__animated animate__backInUp">
             <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" *ngFor="let card of work">
                 <mat-card class="mat-elevation-z0">
                     <mat-card-header>
@@ -37,37 +37,25 @@
             </div>
         </div>
     </section>
-    <div fxLayout="row wrap" fxLayoutGap="16px grid" class="animate__animated animate__backInLeft">
-        <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%">
-            <section class="section">
-                <h2>Skills</h2>
-                <div class="skills-icon">
-                    <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/768px-Unofficial_JavaScript_logo_2.svg.png"
-                        alt="js">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/768px-Typescript_logo_2020.svg.png"
-                        alt="ts">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/768px-Kotlin_Icon.svg.png?20171012085709"
-                        alt="kotlin">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="python">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/640px-Adobe_Photoshop_CC_icon.svg.png"
-                        alt="photoshop cc">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/2101px-Adobe_XD_CC_icon.svg.png"
-                        alt="adobe xd">
-                </div>
-            </section>
-            <section class="section">
-                <h2>Languages</h2>
-                <div class="lang-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png"
-                        alt="germany">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_Armenia.svg/270px-Flag_of_Armenia.svg.png"
-                        alt="armenia">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg"
-                        alt="english">
-                </div>
-            </section>
+    <section class="section">
+        <h2>Skills</h2>
+        <div class="angular" fxLayout="row wrap" fxLayoutGap="100px grid">
+            <div fxFlex="50%" fxFlex.xs="50%" fxFlex.sm="100%" fxFlex.md="50%" *ngFor="let skill of skills">
+                <h2>
+                    <img src="{{ skill.img }}" alt="{{ skill.name }}">Angular
+                </h2>
+                <mat-progress-bar value="{{ skill.value }}"></mat-progress-bar>
+            </div>
         </div>
-    </div>
+    </section>
+    <section class="section">
+        <h2>Languages</h2>
+        <div class="lang-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png"
+                alt="germany">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_Armenia.svg/270px-Flag_of_Armenia.svg.png"
+                alt="armenia">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg" alt="english">
+        </div>
+    </section>
 </div>
